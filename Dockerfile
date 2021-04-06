@@ -2,5 +2,5 @@
 FROM docker.io/jpf91/fedora-systemd
 
 RUN microdnf install \
-    btrfs-progs && \
+    btrfs-progs snapper && \
     microdnf clean all
